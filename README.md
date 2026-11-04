@@ -2,7 +2,7 @@
 
 URLに `.php` が付いているのに、PHPを一切使用していないジョークサイトです。
 
-https://seiichi3141.github.io/imnotphp/index.php/
+https://blog.seiichirou.jp/imnotphp/index.php/
 
 ## しくみ
 
