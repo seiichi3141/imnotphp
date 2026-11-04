@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>I'm not PHP.</title>
+<meta name="description" content="URLに .php が付いていますが、このページはPHPを一切使用しておりません。">
+<link rel="canonical" href="https://seiichi3141.github.io/imnotphp/index.php/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="I'm not PHP.">
+<meta property="og:description" content="URLに .php が付いていますが、このページはPHPを一切使用しておりません。">
+<meta property="og:url" content="https://seiichi3141.github.io/imnotphp/index.php/">
+<meta property="og:image" content="https://seiichi3141.github.io/imnotphp/index.php/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%234f5b93'/%3E%3Cpath d='M6 26 26 6' stroke='%23fff' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header class="hero">
+    <p class="address" aria-label="現在のURL"><span id="address">/imnotphp/index.php/</span></p>
+    <p class="eyebrow">重要なお知らせ</p>
+    <h1>このページは、<br><strong>PHPを一切使用して<wbr>おりません。</strong></h1>
+    <p class="big-en" aria-hidden="true">I'm not <span class="struck">PHP</span>.</p>
+    <p class="lead">URLに「.php」という文字列が含まれているだけです。本当に。</p>
+  </header>
+
+  <section aria-labelledby="diag-title">
+    <h2 id="diag-title">自己診断</h2>
+    <p>いま表示しているこのページを、その場で調べた結果です。</p>
+    <dl class="diag">
+      <div><dt>URLに「.php」</dt><dd id="d-url">確認中…</dd></div>
+      <div><dt>サーバー</dt><dd id="d-server">確認中…</dd></div>
+      <div><dt>Content-Type</dt><dd id="d-type">確認中…</dd></div>
+      <div><dt>X-Powered-By</dt><dd id="d-power">確認中…</dd></div>
+      <div><dt>index.php の正体</dt><dd>ただのフォルダ</dd></div>
+      <div class="verdict"><dt>判定</dt><dd id="d-verdict">確認中…</dd></div>
+    </dl>
+  </section>
+
+  <section aria-labelledby="play-title">
+    <h2 id="play-title">PHPの文法に準拠した処理</h2>
+    <p>当サイトでは、ページの提供に必要な機能に限定して、PHPの文法の一部を解釈・処理できる独自ソフトウェアを実装しました。JavaScript製です。PHP本体の実装は流用していません。</p>
+    <div class="samples" role="group" aria-label="サンプルコード">
+      <button type="button" data-sample="hello">あいさつ</button>
+      <button type="button" data-sample="len">文字数</button>
+      <button type="button" data-sample="info">phpinfo()</button>
+      <button type="button" data-sample="loop">for文</button>
+      <button type="button" data-sample="sys">system()</button>
+    </div>
+    <label class="visually-hidden" for="code">コード</label>
+    <textarea id="code" rows="6" spellcheck="false" autocapitalize="off" autocomplete="off"></textarea>
+    <div class="run-row">
+      <button type="button" id="run" class="primary">実行（PHPではない）</button>
+      <span class="hint">⌘ / Ctrl + Enter</span>
+    </div>
+    <pre id="output" aria-live="polite" tabindex="0"></pre>
+  </section>
+
+  <section aria-labelledby="faq-title">
+    <h2 id="faq-title">よくあるご質問</h2>
+    <dl class="faq">
+      <dt>本当にPHPではないのですか？</dt>
+      <dd>はい。GitHub Pagesで配信している静的ファイルで、サーバー側で実行されるものはありません。</dd>
+      <dt>ではなぜURLに「.php」が？</dt>
+      <dd><code>index.php</code> という名前のフォルダの中に <code>index.html</code> を置いているからです。</dd>
+      <dt>昔PHPだったときの名残ですか？</dt>
+      <dd>いいえ。このサイトは生まれたときから静的HTMLです。名残と呼べるほどの過去がありません。</dd>
+      <dt>PHPから移行したのですか？</dt>
+      <dd>いいえ。移行していませんし、移行する予定もありません。</dd>
+      <dt>PHPの脆弱性の影響は受けますか？</dt>
+      <dd>受けません。PHPではないので。ただし、PHPをお使いの方は下の案内をご確認ください。</dd>
+      <dt>PHPがお嫌いなのですか？</dt>
+      <dd>いいえ、大好きです。拡張子をお借りしていることを恐縮しています。</dd>
+    </dl>
+  </section>
+
+  <section class="serious" aria-labelledby="serious-title">
+    <h2 id="serious-title">ここだけ真面目な話</h2>
+    <p>2026年10月に公表されたPHPの脆弱性「PHP2Shell」（CVE-2026-109618、CVE-2026-109619）は実在します。本物のPHPを動かしている方は、8.5.12、8.4.27、8.3.36、8.2.35 以降への更新をご確認ください。</p>
+    <p>詳しくは <a href="https://www.helpnetsecurity.com/2026/10/21/php2shell-php-vulnerabilities-patched-cve-2026-109618-cve-2026-109619/">Help Net Security の記事</a> をどうぞ。</p>
+  </section>
+</main>
+
+<footer>
+  <p>このサイトは、NECのルーター「Aterm」の設定画面URLをめぐる話題から着想した非公式のジョークサイトです。NECプラットフォームズおよびAtermとは一切関係なく、掲載内容は同社の見解ではありません。</p>
+  <p>元の話題：<a href="https://www.aterm.jp/product/atermstation/info/2026/info1026.html">公式のお知らせ</a> ／ <a href="https://www.itmedia.co.jp/news/article/2611/04/2000002847/">ITmedia NEWS</a></p>
+  <p><a href="https://github.com/seiichi3141/imnotphp">ソースコード</a>（PHPは含まれていません）</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
